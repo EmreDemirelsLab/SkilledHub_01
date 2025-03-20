@@ -175,58 +175,47 @@
 #         print('Sayı asal değildir')
 #     if sayi != 0:
 #         print('sayı asaldır')
-#         break Bakk
+#         break # benim denediğim bak devam et
 
 
-# sayi = int(input('Sayı Giriniz:'))
-#
-# if sayi < 2:
-#     print('2 den küçük sayıların asallık kontrolü yapılmaz ')
-# else:
-#     is_prime = True
-#
-#     sayac = 2
-#     while sayac < sayi:
-#         if sayi % sayac == 0:
-#             is_prime = False
-#             break
-#         sayac += 1
-#
-#     if is_prime: #is_prime == True
-#         print(f'{sayi} asaldır..!')
-#     else:
-#         print(f'{sayi} asal değildir')
+sayi = int(input('Sayı Giriniz:'))
+
+if sayi < 2:
+    print('2 den küçük sayıların asallık kontrolü yapılmaz ')
+else:
+    is_prime = True
+
+    sayac = 2
+    while sayac < sayi:
+        if sayi % sayac == 0:
+            is_prime = False
+            break
+        sayac += 1
+
+    if is_prime: #is_prime == True
+        print(f'{sayi} asaldır..!')
+    else:
+        print(f'{sayi} asal değildir')
 
 
-# sayi = int(input('Bir Sayı Giriniz: '))
-# if sayi < 2:
-#     print('2 den küçük sayılarda asallık kontrolü olmaz')
-# else:
-#     kontrol = True
-#     sayac = 2
-#     while sayac < sayi:
-#         if sayi % sayac == 0:
-#             kontrol = False
-#             break
-#         sayac += 1
-#     if kontrol:
-#         print(f'{sayi} Asaldır..!')
-#     else:
-#         print(f'{sayi} Asal Değildir..!')
 
-# sayi = int(input('Sayı Giriniz:'))
-# if sayi < 0:
-#     print('Sıfırdan küçük sayıların faktöriyeli hesaplanmaz!')
-# elif sayi == 1 or sayi == 0:
-#     print('Faktöriyel 1')
-# else:
-#     sonuc = 1
-#
-#     while sayi > 0:
-#         sonuc *= sayi #sonuc = sonuc * sayi
-#         sayi-= 1 #sayi = sayi -1
-#
-#     print(f'Faktöriyel: {sonuc}')
+
+sayi = int(input('Sayı Giriniz:'))
+if sayi < 0:
+    print('Sıfırdan küçük sayıların faktöriyeli hesaplanmaz!')
+elif sayi == 1 or sayi == 0:
+    print('Faktöriyel 1')
+else:
+    sonuc = 1
+
+    while sayi > 0:
+        sonuc *= sayi #sonuc = sonuc * sayi
+        sayi-= 1 #sayi = sayi -1
+
+    print(f'Faktöriyel: {sonuc}')
+
+
+
 
 sayi =int(input('Sayı:'))
 sonuc = 1

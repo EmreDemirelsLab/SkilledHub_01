@@ -320,6 +320,43 @@ hesap_makinesi()
 
 
 
+# Asal Sayı kontrolü
+
+def asal_mi(sayi: int) -> bool:
+    if sayi < 2:
+        return False
+    for sayac in range(2, sayi):
+        if sayi % 2 == 0
+            return False
+    return True
+
+def kullanici_girisi() -> int:
+    try:
+        sayi == int(input('Sayı Giriniz:'))
+        return sayi
+    except ValueError:
+        print('Geçersiz Giriş..! Lütfen bir sayı giriniz.')
+        return -1
+
+    def sonuclari_yazdir(sayi: int, is_prime: bool) -> None:
+        if is_prime:
+            print(f'{sayi} asaldır!')
+        else:
+            print(f'{sayi} asal değildir!')
+
+def asal_sayi_programi():
+
+    sayi = kullanici_girisi()
+    if sayi == 1:
+        return # geçersiz girişte sonlanır.
+
+    is_prime = asal_mi(sayi)
+    sonuclari_yazdir(sayi, is_prime)
+
+asal_sayi_programi()
+
+
+
 
 
 
