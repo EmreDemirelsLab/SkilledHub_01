@@ -252,8 +252,8 @@ def cumle(soz: str) -> str:
     sorted_list = sorted(temiz_liste)
     return ' ' .join(sorted_list) # join liste elemanlarını belirli bir ayraçla birleştirip tek bir string oluşturur. burda ' ' boşluk.
 
-# soz = input('Cümle Giriniz: ')
-# print(cumle(soz))
+soz = input('Cümle Giriniz: ')
+print(cumle(soz))
 
 
 
